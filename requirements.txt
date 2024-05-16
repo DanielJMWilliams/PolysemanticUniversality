@@ -1,0 +1,7 @@
+numpy
+scipy==1.12
+sentence_transformers
+nltk
+gensim
+matplotlib
+ipympl
