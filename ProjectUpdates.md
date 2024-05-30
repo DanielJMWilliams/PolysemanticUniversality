@@ -3,6 +3,7 @@
 # 01/06/2024 Project Delivery
 
 # 25/05/2024 - Further developing the Project
+- Began exploring alternative method for investigating polysemantic dimensions - maxing out a particular dimension and finding the most similar words
 
 # 18/05/2024 Developing the Project
 - Made code more modularised and reusable.

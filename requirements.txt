@@ -5,3 +5,4 @@ nltk
 gensim
 matplotlib
 ipympl
+pandas
