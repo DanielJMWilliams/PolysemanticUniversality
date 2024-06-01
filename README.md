@@ -23,4 +23,4 @@ Prerequisites:
 3. Activate the virtual environment using `venv\Scripts\Activate.ps1` in powershell.
 4. Install the project dependencies using `pip install -r requirements.txt`.
 
-You're now good to go and can play with the Jupyter Notebook.
+You're now good to go and can play with the [Jupyter Notebook](/PolysemanticUniversality.ipynb).
