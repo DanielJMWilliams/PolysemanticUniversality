@@ -10,7 +10,7 @@ class VectorUtils:
         cos_angle = dot_product / (norm_v1 * norm_v2)
         angle = np.arccos(cos_angle)
         angle_degrees = np.degrees(angle)    
-        return angle_degrees
+        return angle_degrees, cos_angle
     
 class ModelUtils:
     def average_angle(model, corpus):
@@ -21,7 +21,7 @@ class ModelUtils:
             for j in corpus:
                 wordj=j[0]
                 if wordi!=wordj:
-                    angles.append(VectorUtils.angle_between_vectors(model.wv[wordi], model.wv[wordj]))
+                    angles.append(VectorUtils.angle_between_vectors(model.wv[wordi], model.wv[wordj])[0])
         average_angle = sum(angles)/len(angles)
         print("Average angle: ", average_angle)
         return average_angle
@@ -53,6 +53,11 @@ class ModelUtils:
             "annotations": annotations             
         }
         return data
+    def print_word_differences(model, word1, word2):
+        print(f"\n {word1} - {word2}")
+        angle, similarity = VectorUtils.angle_between_vectors(model.wv[word1], model.wv[word2])
+        print("Angle between: ", angle)
+        print("Cosine Similarity: ", similarity)
     
 class GraphUtils:
     
